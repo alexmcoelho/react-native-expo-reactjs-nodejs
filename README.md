@@ -1,4 +1,4 @@
-# react-native-expo-reactjs-nodjs
+# react-native-expo-reactjs-nodejs
 
 ## Destaques do que foi utilizado
 
