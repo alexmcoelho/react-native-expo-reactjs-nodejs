@@ -1,0 +1,64 @@
+thema para aparecer icones no arquivos do projeto
+-material icon theme
+
+Depois de ter instalado dependências do typescript iniciar as configurações do typescript
+-npx tsc --init
+
+Para não precisar matar o servidor e subir ele novamente sempre que tiver alguma alteração
+-npm install ts-node-dev -D 
+-npx ts-node-dev .\src\server.ts //iniciando o server
+
+Para fazer as migrações
+-npx knex migrate:latest --knexfile knexfile.ts migrate:latest
+
+Para visualizadar dados, tabelas dentro do visual studio code
+--instalar plugin sqlite
+
+Para abrir o anco sqlite
+--Ctrl=shift+p -> SQLite:Open Database -> pressionar enter no arquivo .sqlite
+
+Ignorando alterações na pasta node_modules, sempre que feito uma alteração o node vai verificar alterações na pasta node_modules, mas não é necessário, então pode-se usar o comando --ignore-watch node_modules, logo o comando para executar o projeto seria assim:
+-ts-node-dev --transpileOnly --ignore-watch node_modules src/server.ts
+
+Criando projeto react com template typescript
+-npx create-react-app web --template=typescript
+
+Dicas de fontes
+-Google fonts
+
+Dicas de integrações do typescript com o react
+-https://github.com/typescript-cheatsheets/react-typescript-cheatsheet
+
+Erros comuns com o expo
+-https://github.com/Rocketseat/expo-common-issues
+
+Instalar fontes google fonts no reat-native (utilizando expo)
+-https://dev.to/expo/expo-google-fonts-is-released-4g58
+
+Instalando dependências do navigation
+-https://reactnavigation.org/docs/getting-started (dois primeiros comandos, mas a dependência que realmente foi utilizado é a react-native-gesture-handler)
+
+Quando temos por exemplo style={{}}, a primeira chave indica que será colocado um código javascript ali dentro e a segunda chave indica que será colocado um método
+
+expo install expo-constants
+
+Dica para pegar imagens de vários tamanhos
+-https://unsplash.com/
+
+Aplicar filtros nos uploads, como tamanho tipo de arquivo
+-https://github.com/expressjs/multer (procurar por filter)
+
+Para colocar arquivos em input no react-js
+-https://react-dropzone.js.org/
+
+Tem uma dica legal de como passar a informação de component pai para o filto lá no front-end na hora de passar a função setSelectedFile para o Dropzone, o que acontece é que o component Dropzone seta o file, e essa informação fica acessível no component filho
+
+Estudar hot keys no vs code
+
+Caso tenha problemas com typescript no celebrate no backend (usado para criar validação), utilizar o comando:
+-npm install @types/hapi__joi -D
+
+Dica de validação do reactJS
+-https://medium.com/@BradHick/yup-valida%C3%A7%C3%B5es-no-react-de-uma-forma-muito-simples-700c039114e3 (mas o certo é olhar direto na documentação oficial)
+
+No projeto server tem uma configuração legal do git, onde todos os arquivos da pata uploads foram ignorados, mas acontece que fazendo essa configuração a pasta não é criada no git, então para essa pasta não ser ignorada, foi acrescetando !uploads/.gitkeep lá no .gitignore
