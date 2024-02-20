@@ -1,4 +1,0 @@
-Perguntas:
--vai ser visto como usar micro services;
--vai ser visto como automaticar deploys, por exemplo faço o push no git e automaticamente é atualizado no ambiente de de produção
--pegundar se vão ensinar alguns design patterns
